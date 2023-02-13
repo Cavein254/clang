@@ -11,6 +11,12 @@ scanf("%1.2f", &height);
 ```
 
 It is also important to note that using `%d` and `1.3f` produces different results.
+
+It is also possible to input multiple values from a single line as:
+```c
+printf("Enter the top 5 marks \n");
+scanf("%d %d %d %d %d", val1,val2,val3,val4,val5);
+```
  #conversion 	#Output
  %a		Floating Point Number
  %c		Single Character
@@ -19,7 +25,6 @@ It is also important to note that using `%d` and `1.3f` produces different resul
  %f		Floating Point Number, decimal Notation
  %i		Unsigned integer similar to %d
  %p 		Pointer
-
 
 
 Another way of declaring constants is the use of the `const` keyword. In this case
