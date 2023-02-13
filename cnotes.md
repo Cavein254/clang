@@ -21,7 +21,7 @@ scanf("%d %d %d %d %d", val1,val2,val3,val4,val5);
  %a		Floating Point Number
  %c		Single Character
  %d		Single decima integer
- %e		Floating Point Number, e-notation
+%e		Floating Point Number, e-notation
  %f		Floating Point Number, decimal Notation
  %i		Unsigned integer similar to %d
  %p 		Pointer
@@ -33,9 +33,28 @@ const int MONTHS  = 12;
 ```
 defines a constant for months
 
+# Generating Random values
+Note that using the `rand ()` function from the `stdlib.h` library generates random variables that are similar.
+To generate truly random variables use the `srand()` header together with the system time from `time.h`.
 
+```c
+#include <stdio.h>
+#include <stdio.h>
+#include <time.h>
 
+int main() {
+	time_t t;
+	int count = 1;
+	int num;
 
+	srand(time(&t));
+	while(num != 99) {
+		printf(" %d with %d", count, num);
+		count ++;
+		num = rand() % 100;
+		}
+	}
+```
 
 
 
